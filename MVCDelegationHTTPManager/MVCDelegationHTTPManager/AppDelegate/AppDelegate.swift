@@ -5,12 +5,13 @@
 //  Created by Jyoti on 25/08/2022.
 //
 
+let baseUrl : String = "https://haveibeenpwned.com/api/v2"
+let breachesExtensionURL : String = "/breaches"
+
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

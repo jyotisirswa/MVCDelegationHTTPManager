@@ -13,6 +13,7 @@
 		003AF57228B7866C004E456A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003AF57028B7866C004E456A /* Main.storyboard */; };
 		003AF57428B7866F004E456A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003AF57328B7866F004E456A /* Assets.xcassets */; };
 		003AF57728B7866F004E456A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003AF57528B7866F004E456A /* LaunchScreen.storyboard */; };
+		003AF58328B791D7004E456A /* DelegationHTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003AF58228B791D7004E456A /* DelegationHTTPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		003AF57328B7866F004E456A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003AF57628B7866F004E456A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003AF57828B7866F004E456A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003AF58228B791D7004E456A /* DelegationHTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationHTTPManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		003AF56928B7866C004E456A /* MVCDelegationHTTPManager */ = {
 			isa = PBXGroup;
 			children = (
-				003AF56A28B7866C004E456A /* AppDelegate.swift */,
-				003AF56C28B7866C004E456A /* SceneDelegate.swift */,
-				003AF56E28B7866C004E456A /* ViewController.swift */,
+				003AF57E28B786A7004E456A /* AppDelegate */,
+				003AF57F28B786B7004E456A /* ViewControllers */,
+				003AF58028B786C4004E456A /* Networking */,
+				003AF58128B786EA004E456A /* Models */,
 				003AF57028B7866C004E456A /* Main.storyboard */,
 				003AF57328B7866F004E456A /* Assets.xcassets */,
 				003AF57528B7866F004E456A /* LaunchScreen.storyboard */,
 				003AF57828B7866F004E456A /* Info.plist */,
 			);
 			path = MVCDelegationHTTPManager;
+			sourceTree = "<group>";
+		};
+		003AF57E28B786A7004E456A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				003AF56A28B7866C004E456A /* AppDelegate.swift */,
+				003AF56C28B7866C004E456A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		003AF57F28B786B7004E456A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				003AF56E28B7866C004E456A /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		003AF58028B786C4004E456A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				003AF58228B791D7004E456A /* DelegationHTTPManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		003AF58128B786EA004E456A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003AF56F28B7866C004E456A /* ViewController.swift in Sources */,
+				003AF58328B791D7004E456A /* DelegationHTTPManager.swift in Sources */,
 				003AF56B28B7866C004E456A /* AppDelegate.swift in Sources */,
 				003AF56D28B7866C004E456A /* SceneDelegate.swift in Sources */,
 			);
